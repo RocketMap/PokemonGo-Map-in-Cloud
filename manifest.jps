@@ -1,10 +1,10 @@
 {
   "jpsType": "install",
   "application": {
-    "name": "PokemonGo Map",
-    "homepage": "https://github.com/PokemonGoMap/PokemonGo-Map/",
+    "name": "RocketMap",
+    "homepage": "https://github.com/RocketMap/RocketMap/",
     "description": "Find all the pokemon in your area... and more!",
-    "logo": "https://raw.githubusercontent.com/PokemonGoMap/PokemonGo-Map-in-Cloud/master/images/icon-70x70.png",
+    "logo": "https://raw.githubusercontent.com/RocketMap/PokemonGo-Map-in-Cloud/master/images/icon-70x70.png",
     "settings": {
       "fields": [
         {
@@ -65,7 +65,7 @@
             "nodeGroup": "cp",
             "nodeType": "docker",
             "docker": {
-              "image": "frostthefox/pokemongo-map",
+              "image": "frostthefox/rocketmap",
               "cmd": "-a \"${settings.auth}\" -u \"${settings.username}\" -p \"${settings.password}\" -l \"${settings.location}\" -st \"${settings.stepsAway}\" -k \"${settings.gmapKey}\" --port 80 -sd 10"
             }
           }
